@@ -3,12 +3,23 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@reach/combobox": "^0.15.1",
+    "@react-google-maps/api": "^2.1.1",
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
+    "airtable-node": "^0.1.20",
+    "auth0": "^2.34.2",
+    "axios": "^0.21.1",
+    "netlify-cli": "^3.24.3",
     "react": "^17.0.2",
+    "react-awesome-slider": "^4.1.0",
     "react-dom": "^17.0.2",
+    "react-icons": "^4.2.0",
+    "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.3",
+    "stripe": "^8.145.0",
+    "styled-components": "^5.2.3",
     "web-vitals": "^1.0.1"
   },
   "scripts": {
