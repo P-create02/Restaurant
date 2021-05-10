@@ -12,8 +12,7 @@ export default function ProductList({ items, selectOrder }) {
                         <div className='info'>
                             <h4>{item.title}</h4>
                             <p>Chicken, Cheese, Potato, Onion, Fries</p>
-                            <h5>$ {item.price}</h5>
-                            <Link to={`/cart`} className='btn'>add to cart</Link>
+                            <Link to={`/cart/${item.id}`} className='btn'>more</Link>
                         </div>
                     </div>
                 )
@@ -48,7 +47,7 @@ const Wrapper = styled.section`
                 letter-spacing: 0.15rem;
                 text-transform: uppercase;
             }
-            p{color: grey}
+            p{color: grey; font-style: italic;}
         }
         .btn{
             border: 2px solid var(--backBox);

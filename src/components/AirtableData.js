@@ -1,15 +1,15 @@
-const Airtable = require('airtable-node');
+// const Airtable = require('airtable-node');
 
-const airtable = new Airtable({ apiKey: process.env.REACT_APP_AIRTABLE }).base('app8Cy2NwDdrw3TWG').table('products')
+// const airtable = new Airtable({ apiKey: process.env.REACT_APP_AIRTABLE }).base('app8Cy2NwDdrw3TWG').table('products')
 
-const dataOne = async() =>{
-    const { records } = await airtable.list()
-    const products = records.map((product) => {
-        const { name, category, price, image } = product.fields
-        return { category, name, image, price }
-    })
-    return dataOne
-} 
+// const dataOne = async() =>{
+//     const { records } = await airtable.list()
+//     records.map((product) => {
+//         const { name, category, price, image } = product.fields
+//         return { category, name, image, price }
+//     })
+//     return dataOne
+// } 
 
 
 const menuData = [

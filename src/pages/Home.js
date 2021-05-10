@@ -25,7 +25,7 @@ export default function Home() {
             <div className="slider">
                 {phtsSlider.map((slider, index) => {
                     return(
-                        <Link><article className={index === value ? 'activeSlide' : 'nextSlide'} key={slider.id}>
+                        <Link key={slider.id}><article className={index === value ? 'activeSlide' : 'nextSlide'}>
                             <img src={slider.image} alt={slider.title}/>
                             <h2>{slider.title}</h2>
                             <h4>{slider.text}</h4>
@@ -74,8 +74,9 @@ const NextOne = styled.section`
             background: var(--socials);
         }
         @media (max-width: 750px){
-            width: auto;
-            margin: 1rem auto;
+            width: 100%;
+            margin: 0 auto;
+            padding: 1rem 0;
         }
     }
     p{

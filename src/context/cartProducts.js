@@ -30,7 +30,6 @@ export const AppProvider = ({children}) =>{
         setIsSubmenuOpen(false)
     }
 
-
     const selectOrder = (id) =>{
         setOrder(menuData.filter((item) => item.id === id))
     }

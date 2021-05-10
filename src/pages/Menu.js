@@ -10,15 +10,27 @@ const newCat = [...new Set(menuData.map((item) => item.category))].sort()
 
 export default function Menu() {
     const { closeSubmenu, selectOrder } = useCartProducts()
-    const [category, setCategory] = React.useState(newCat)
+    const [category] = React.useState(newCat)
     const [menu, setMenu] = React.useState([])
+    const [loading, setLoading] = React.useState(true)
 
     const filterItems = (cat) =>{
         setMenu(menuData.filter((item) => cat === item.category))
     }
     React.useEffect(() =>{
+        setTimeout(() =>{
+            setLoading(false)
+        }, 550)
         setMenu(menuData)
     }, [])
+
+    if(loading){
+        return(
+            <div className="loading">
+                <div className="loading"></div>
+            </div>
+        )
+    }
 
     return (<>
         <TitlePages title='menu' text='enjoy the taste of our dishes' />

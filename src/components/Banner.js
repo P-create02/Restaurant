@@ -6,7 +6,7 @@ import mainPht from '../images/home.jpg'
 export default function Banner() {
     return (
         <Wrapper>
-            <img src={mainPht}/>
+            <img src={mainPht} alt='chef' />
             <div className="center">
                 <h2>best place in Cracow!</h2>
                 <div className="stars">
